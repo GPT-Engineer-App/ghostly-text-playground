@@ -8,7 +8,7 @@ const Index = () => {
         <p className="text-xl text-gray-600 mb-6">Watch the ghost text appear and disappear. Click to pause/resume.</p>
       </div>
       <div className="w-full max-w-md">
-        <GhostInput ghostText="Welcome to the ghost input demo..." typingSpeed={100} deletingSpeed={50} />
+        <GhostInput ghostText="Welcome to the ghost input demo..." typingSpeed={50} deletingSpeed={25} />
       </div>
     </div>
   );

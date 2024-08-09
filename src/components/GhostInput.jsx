@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Input } from "@/components/ui/input";
 
-const GhostInput = ({ ghostText = "Type your message here...", typingSpeed = 100, deletingSpeed = 50 }) => {
+const GhostInput = ({ ghostText = "Type your message here...", typingSpeed = 50, deletingSpeed = 25 }) => {
   const [displayText, setDisplayText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +45,7 @@ const GhostInput = ({ ghostText = "Type your message here...", typingSpeed = 100
         value={displayText}
         onChange={() => {}}
         onClick={handleClick}
-        className="w-full p-2 border rounded"
+        className="w-full p-2 border rounded text-gray-400"
         placeholder={ghostText}
       />
       <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
